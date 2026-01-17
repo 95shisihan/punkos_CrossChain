@@ -1,0 +1,1 @@
+DEPLOY_ENV=test forge script script/Manager.d.sol --broadcast -vvvv --legacy

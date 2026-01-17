@@ -1,0 +1,59 @@
+{
+ "HubchainManager": {
+  "rpc": "http://127.0.0.1:8545",
+  "address": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+  "mode": 1
+ },
+ "Bitcoin Mainnet": {
+  "chainID": 9,
+  "relayContract": {
+   "path": "src/BTC/BTC_RelayContract.sol",
+   "name": "BTC_RelayContract",
+   "address": "0x5bf5b11053e734690269C6B9D438F8C9d48F528A",
+   "genesis": {
+    "hash": "000000000000000000014d4b880e871a6b24f4b6352d059dce74b1ba9537d1bd",
+    "height": 846720
+   }
+  },
+  "transportContract": {
+   "path": "src/BTC/BTC_TransportContract.sol",
+   "name": "BTC_Transport",
+   "address": "0x2E2Ed0Cfd3AD2f1d34481277b3204d807Ca2F8c2"
+  },
+  "rpcPath": "relayerClient/BTC/configUser.json"
+ },
+ "Bitcoin Regtest": {
+  "chainID": 1,
+  "relayContract": {
+   "path": "src/BTC/BTC_RelayContract.sol",
+   "name": "BTC_RelayContract",
+   "address": "0x984f797d26d3da2E9b9f8Ae4eeFEACC60fCAA90C",
+   "genesis": {
+    "hash": "0f9188f13cb7b2c71f2a335e3a4fc328bf5beb436012afca590b1a11466e2206",
+    "height": 0
+   }
+  },
+  "transportContract": {
+   "path": "src/BTC/BTC_TransportContract.sol",
+   "name": "BTC_Transport",
+   "address": "0xa2a0D69221829d6005E31Bb187A0A5DEBEaD8331"
+  },
+  "rpcPath": "relayerClient/BTC_Regtest/configUser.json"
+ },
+ "Bitcoin Cash Mainnet": {
+  "chainID": 0,
+  "relayAddress": "",
+  "relayPath": "src/BCH/BCH_RelayContract.sol",
+  "relayName": "BCH_RelayContract",
+  "rpcPath": "relayerClient/BCH",
+  "transportAddress": ""
+ },
+ "Ethereum": {
+  "chainID": 0,
+  "relayAddress": "",
+  "relayPath": "src/ETH2/ETH_RelayContract.sol",
+  "relayName": "ETH_RC",
+  "rpcPath": "relayerClient/BCH",
+  "transportAddress": ""
+ }
+}
